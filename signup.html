@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAGA-Creativity under one roof</title>
+    <link rel="shortcut icon"
+        href="https://www.pngitem.com/pimgs/m/358-3583985_thumb-image-logo-full-color-png-transparent-png.png"
+        type="image/x-icon">
+
+    <style>
+        body {
+            background-image: url('https://media.istockphoto.com/id/1163242150/photo/cotton-silk-fabric-wallpaper-texture-pattern-background-in-light-pastel-beige-cream-color-tone.jpg?s=612x612&w=0&k=20&c=Uu7j9-MFmwcbvalC0cwAA_gScdXMg_t_W23jGOTlFwg=');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: 'Raga Aikyam-1 (1).png';
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            
+            max-width: 40%;
+            margin: 0 auto;
+            padding: 40px;
+            background-image: 'Raga Aikyam-1 (1).png';
+            border-radius: 5px;
+            box-shadow: 0 0 10px black;
+            margin-top: 100px;
+        }
+        h1{
+            text-align: center;
+            color: black;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            color: black;
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: 50%;
+            padding: 10px;
+            border-radius: 3px;
+            border: 1px solid #010101;
+        }
+
+        .form-group button {
+            text-align: center;
+            margin-left: 25%;
+            width: 40%;
+            padding: 10px;
+            background-color: #4caf50;
+            color: rgb(17, 14, 14);
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+
+    <style>
+        .error-message {
+            color: red;
+        }
+    </style>
+
+    <style>
+        #home-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sign Up</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="first-name">First Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="first-name" name="first-name"
+                        placeholder="Enter your first name" required></label>
+
+                <label for="last-name">Last Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="last-name" name="last-name"
+                        placeholder="Enter your last name" required></label>
+
+                <label for="dob">Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" id="dob" name="dob" placeholder="Date of Birth"
+                        required></label>
+
+                <label for="phone">Phone number:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="tel" id="phone" name="phone" placeholder="Phone Number"
+                        required></label>
+
+                <label for="gender">Gender:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select id="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>&nbsp;&nbsp;
+                    </select></label>
+
+
+                <label for="password">Password:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" id="password" name="password"
+                        placeholder="Password" required></label>
+
+                <label for="confirm password">Confirm Password:&nbsp;&nbsp;<input type="password" id="confirm password"
+                        name="confirm password" placeholder="Confirm Password" required></label>
+
+            </div>
+            <div class="form-group">
+                <button onclick="Signup" style="color:#ffffff">Sign-up</button>
+            </div>
+        </form>
+        <p style="color: black;"> Sign up with Google account:&nbsp;&nbsp;&nbsp;<button onclick="signInWithGoogle()"
+            style="width: 200px;height: 30px;background-color:white;color:black;border-color: white;border-radius: 3px;text-decoration: underline;">Sign Up
+            with Gmail</button> </p>
+        
+        <script>
+            function signInWithGoogle() {
+                // Perform Google sign-up authentication
+                // You can add your code here to handle the Google sign-up process
+            }
+        </script>
+        <p style="color: black;">OR If you already have an account: <button onclick="redirectToLogin()"
+            style="width: 150px;height: 30px;background-color:white;color:black;border-color:white;border-radius: 3px;text-decoration: underline;">Log
+            in</button></p>
+        
+    </div>
+    <script>
+        function redirectToLogin() {
+            // Redirect the user to the login page
+            window.location.href = "login.html";
+        }
+    </script>
+
+    <button id="home-button" onclick="redirectToHome()">Home</button>
+
+    <script>
+        function redirectToHome() {
+            // Redirect the user to the home page
+            window.location.href = "home.html";
+        }
+    </script>
+</body>
+
+</html>

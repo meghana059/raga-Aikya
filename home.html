@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAGA AIKYA- Creativity Under One Roof</title>
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://media.istockphoto.com/id/1163242150/photo/cotton-silk-fabric-wallpaper-texture-pattern-background-in-light-pastel-beige-cream-color-tone.jpg?s=612x612&w=0&k=20&c=Uu7j9-MFmwcbvalC0cwAA_gScdXMg_t_W23jGOTlFwg=');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            width: 100%;
+            background-size: 100% 100%;
+            height: 200vh;
+            overflow-y: scroll;
+            /* Enable vertical scrolling */
+            scroll-behavior: smooth;
+        }
+
+
+        .header {
+            background-color: #c4ae78;
+            height: 60px;
+            /* Customize the height of the header */
+            width: 100%;
+            /* Customize the width of the header */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+
+        }
+
+        .logo img {
+            height: 80px;
+            /* Customize the height of the logo */
+        }
+
+        .title {
+            margin-right: 40%;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .slogan {
+            font-size: 16px;
+            text-align: center;
+            color: black;
+        }
+
+
+        nav {
+
+            background-color: #c4ae78;
+            color: #fff;
+            width: 100%;
+            padding: 10px;
+            margin-right: 50px;
+            text-align: center;
+
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+
+        nav ul li {
+            text-decoration: none;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        nav li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: right;
+            margin-top: 0px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #666;
+        }
+
+        /* Add your media queries for responsiveness */
+        @media screen and (max-width: 600px) {
+            .button-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .button {
+                margin-bottom: 10px;
+            }
+        }
+
+        main {
+            padding: 20px;
+            width !: auto;
+        }
+
+        .about {
+            width: 100%;
+            font-family: cursive;
+            background-color: #5C4033;
+            color: white;
+            border: 10px solid #5C4033;
+            border-radius: 25px;
+            padding: 10px;
+            margin right: 0;
+            position: relative;
+            bottom: -3900px;
+        }
+
+        .paintings {
+            width: 30%;
+            background-color: #FFFFF5;
+            width: 80%;
+            margin-left: 2%;
+            margin-bottom: 20px;
+            position: relative;
+            top: -250px;
+            border: 10px solid #FFFFF5;
+            border-radius: 25px;
+            padding: 30px;
+
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #navigation {
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+
+        #navigation a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        #navigation a:hover {
+            text-decoration: none;
+            /* Remove underline on hover */
+        }
+
+        #content {
+            padding: 20px;
+        }
+
+        .category {
+            margin-bottom: 40px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .category h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .item-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* Adjust the number of columns as needed */
+            gap: 20px;
+        }
+
+        .item {
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .item h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .item p {
+            margin-bottom: 10px;
+        }
+
+        .item button {
+            padding: 5px 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        #navigation {
+            background-color: black;
+            height: 1px;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        #navigation a {
+            margin-right: 10px;
+            text-decoration: none;
+            border-bottom: none;
+            color: #333;
+        }
+
+        #content {
+            padding: 20px;
+        }
+
+        .category {
+            text-decoration: none;
+            margin-bottom: 40px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .category h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+        footer {
+            background-color: #060505;
+            color: #fff;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            padding-top: 0.1px;
+            padding-bottom: 0.1px;
+            text-align: center;
+            position: relative;
+            bottom: -330px;
+
+
+        }
+
+        /* Add your media queries for responsiveness */
+        @media screen and (max-width: 600px) {
+            nav ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="log.jpg" alt="Logo">
+        </div>
+
+        <div class="title">
+            Welcome to Raga Aikya
+            <div class="slogan">
+                Creativity under one roof
+            </div>
+        </div>
+
+
+    </header>
+
+    <nav>
+        <ul>
+            <div class="button-container">
+                <button class="button">Home</button>
+                <button class="button">Gallery</button>
+                <button class="button">Artists</button>
+              
+                <a href="cart.html" target="_blank"><button class="button">cart</button></a>
+                <a href="signup.html" target="_blank"><button class="button">Sign Up</button></a>
+                <a href="login.html" target="_blank"><button class="button">Log in</button></a>
+            </div>
+
+        </ul>
+
+    </nav>
+
+    <main>
+        <div class="about">
+            <h2>About Us</h2>
+
+            <p>India had a fine tradition in the art of paintings and there are artists who never got a platform to
+                showcase their nostalgic work.</p>
+            <p>RAGA AIKYA- Creativity under one roof is a platform to appreciate indian artwork.This serves as a bridge
+                between artists and aesthetes. We have more than XXX curated artworks on various subjects from over XX
+                artists and art galleries. RAGA AIKYA provides you an option for customising your dream artwork.</p>
+            <p>We would be glad to serve many happy customers worldwide including home buyers, architects, interior
+                designers and big corporate houses. We believe in offering high quality artworks at affordable price -
+                supported by stellar customer service. Please reach to us on ragaaikya@gmail.com or +91 xxxxxxxxxx for
+                your
+                art requirements.</p>
+        </div>
+        <div class="paintings">
+
+
+            <h2 style="color: black;">Indian Artworks</h2>
+
+            <div id="navigation">
+
+            </div>
+
+            <div id="content">
+
+                <a href="#category1" style="color: black;text-decoration: none;">Madhubani
+                    paintings&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a href="#category2" style="color:black;text-decoration:none;">Mysore
+                    paintings&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a href="#category3" style="color:black;text-decoration:none;">Warli
+                    paintings&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a href="#category4" style="color:black;text-decoration:none;">Rajasthani
+                    paintings&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a href="#category5" style="color:black;text-decoration:none;">Kalamkari
+                    paintings&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            </div>
+        </div>
+        </div>
+        <div id="#category1" style="position: relative; top:-250px">
+            <div id="content">
+                <div class="category" id="category1">
+                    <h2>Madhubani Paintings</h2>
+
+                    <div class="item-container">
+                        <div class="item">
+                            <img src="https://thumbs.dreamstime.com/z/madhubani-painting-generative-ai-268645138.jpg"
+                                width="350px" margin-left="50%" alt="" srcset="">
+                            <h3 style="padding-top: 97px;">X Themed painting by YYY artist</h3>
+                            <p>Size of this painting is a inches*b inches.
+                                It is done using xxx paint based on the theme yyy.
+                                The canvas used is of eee material.
+                                The painting depicts -xxxxxxxxxxx-</p>
+                            
+                <a href="cart.html" target="_blank"><button class="button">Add to cart</button></a>
+                        </div>
+
+                        <div class="item">
+                            <img src="https://miro.medium.com/v2/resize:fit:1200/1*SUUpYS0fxIuS5-oB6ZCYIg.jpeg"
+                                width="350px" alt="" srcset="">
+                            <h3 style="padding-top: 97px;">X Themed painting by YYY artist</h3>
+                            <p>Size of this painting is a inches*b inches.
+                                It is done using xxx paint based on the theme yyy.
+                                The canvas used is of eee material.
+                                The painting depicts -xxxxxxxxxxx-</p>
+                                <a href="cart.html" target="_blank"><button class="button">Add to cart</button></a>
+                        </div>
+
+                        <div class="item">
+                            <img src="https://animistearth.in/wp-content/uploads/2022/01/7.jpg" width="350px" alt=""
+                                srcset="">
+                            <h3>X Themed painting by YYY artist</h3>
+                            <p>Size of this painting is a inches*b inches.
+                                It is done using xxx paint based on the theme yyy.
+                                The canvas used is of eee material.
+                                The painting depicts -xxxxxxxxxxx-</p>
+                                <a href="cart.html" target="_blank"><button class="button">Add to cart</button></a>
+                        </div>
+                      </div>
+                      <div class="center">
+                        <a href="madhubanishopping.html" target="_blank" style="text-decoration: none;">
+                          <button style="background-color: #007bff; color: #fff; padding: 10px 20px; border: none; border-radius: 4px;">
+                            View More
+                          </button>
+                        </a>
+                      </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+        <div id="content" style="position: relative; top:-250px">
+            <div class="category" id="category2">
+                <h2>Mysore Paintings</h2>
+
+                <div class="item-container">
+                    <div class="item">
+                        <img src="https://www.dsource.in/sites/default/files/styles/mini_responsivecustom_user_moblie_1x/public/resource/mysore-painting/tanjore-and-mysore-painting/minigallery/5861/tanjore-01.jpg?itok=lQlDoeC5&timestamp=1439890233"
+                            style="padding-left:20%" width="250px" height="300px" alt="" srcset="">
+                        <h3 style="padding-top: 80px;">X Themed painting by YYY artist</h3>
+                        <p>Size of this painting is a inches*b inches.
+                            It is done using xxx paint based on the theme yyy.
+                            The canvas used is of eee material.
+                            The painting depicts -xxxxxxxxxxx-</p>
+                            <a href="cart.html" target="_blank"><button class="button">Add to cart</button></a>
+                    </div>
+
+                    <div class="item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTULaCzdwfo2CckMatl9sZiI5HgypMt1uoyIA&usqp=CAU"
+                            width="250px" style="padding-left: 20%;" alt="" srcset="">
+                        <h3 style="padding-top: 15px;">X Themed painting by YYY artist</h3>
+                        <p>Size of this painting is a inches*b inches.
+                            It is done using xxx paint based on the theme yyy.
+                            The canvas used is of eee material.
+                            The painting depicts -xxxxxxxxxxx-</p>
+                            <a href="cart.html" target="_blank"><button class="button">Add to cart</button></a>                    </div>
+
+                    <div class="item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHCVucVbBgCXGRf3hljP-ZiX6l7dHRm5TFKZOQKZSbFWRA1ztoFI0WOC7vYPBKSJ2Xs8I&usqp=CAU"
+                            style="padding-left:15%" width="300px" alt="" srcset="">
+                        <h3 style="padding-top: 70px;">X Themed painting by YYY artist</h3>
+                        <p>Size of this painting is a inches*b inches.
+                            It is done using xxx paint based on the theme yyy.
+                            The canvas used is of eee material.
+                            The painting depicts -xxxxxxxxxxx-</p>
+                            <a href="cart.html" target="_blank"><button class="button">Add to cart</button></a>                    </div>
+
+
+                </div>
+                <div class="center">
+                    <a href="mysoreshopping.html" target="_blank" style="text-decoration: none;">
+                      <button style="background-color: #007bff; color: #fff; padding: 10px 20px; border: none; border-radius: 4px;">
+                        View More
+                      </button>
+                    </a>
+                  </div>
+            </div>
+        </div>
+        <div id="content" style="position: relative; top:-270px">
+            <div class="category" id="category3">
+                <h2>Warli Paintings</h2>
+
+                <div class="item-container">
+                    <div class="item">
+                        <img src="https://www.himanshuartinstitute.com/art-and-craft-articles/drawing-painting-art-and-craft-news-n-articles-in-india/about-indian-art-warli-painting-from-western-ghats-of-india-3.jpg"
+                            style="padding-left:10%" width="350px" height="300px" alt="" srcset="">
+                        <h3 style="padding-top: 50px;">X Themed painting by YYY artist</h3>
+                        <p>Size of this painting is a inches*b inches.
+                            It is done using xxx paint based on the theme yyy.
+                            The canvas used is of eee material.
+                            The painting depicts -xxxxxxxxxxx-</p>
+                            <a href="cart.html" target="_blank"><button class="button">Add to cart</button></a>                    </div>
+
+                    <div class="item">
+                        <img src="https://m.media-amazon.com/images/I/91TP2uCh3SL.SL1500.jpg" width="400px"
+                            style="padding-left: 5%;" alt="" srcset="">
+                        <h3 style="padding-top: 95px;">X Themed painting by YYY artist</h3>
+                        <p>Size of this painting is a inches*b inches.
+                            It is done using xxx paint based on the theme yyy.
+                            The canvas used is of eee material.
+                            The painting depicts -xxxxxxxxxxx-</p>
+                            <a href="cart.html" target="_blank"><button class="button">Add to cart</button></a>                    </div>
+
+                    <div class="item">
+                        <img src="https://gallerist.in/cdn/shop/products/warli-art-26_1200x1200.jpg?v=1664424839"
+                            style="padding-left:5%" width="430px" alt="" srcset="">
+                        <h3 style="padding-top: 35px;">X Themed painting by YYY artist</h3>
+                        <p>Size of this painting is a inches*b inches.
+                            It is done using xxx paint based on the theme yyy.
+                            The canvas used is of eee material.
+                            The painting depicts -xxxxxxxxxxx-</p>
+                            <a href="cart.html" target="_blank"><button class="button">Add to cart</button></a>                    </div>
+                  </div>
+                  <div class="center">
+                    <a href="warlishopping.html" target="_blank" style="text-decoration: none;">
+                      <button style="background-color: #007bff; color: #fff; padding: 10px 20px; border: none; border-radius: 4px;">
+                        View More
+                      </button>
+                    </a>
+            </div>
+        </div>
+        <div id="content" style="position: relative; top:-20px">
+            <div class="category" id="category4">
+                <h2>Rajasthani Paintings</h2>
+
+                <div class="item-container">
+                    <div class="item">
+                        <img src="https://rukminim1.flixcart.com/image/416/416/jn4x47k0/painting/s/k/h/mm-2072-mad-masters-original-imaf9wcfzv84rwbp.jpeg?q=70"
+                            style="padding-left:10%" width="350px" height="300px" alt="" srcset="">
+                        <h3 style="padding-top: 67px;">X Themed painting by YYY artist</h3>
+                        <p>Size of this painting is a inches*b inches.
+                            It is done using xxx paint based on the theme yyy.
+                            The canvas used is of eee material.
+                            The painting depicts -xxxxxxxxxxx-</p>
+                            <a href="cart.html" target="_blank"><button class="button">Add to cart</button></a>                    </div>
+
+                    <div class="item">
+                        <img src="https://m.media-amazon.com/images/I/714rgk7R9WL.SL1444.jpg" width="400px"
+                            style="padding-left: 5%;" alt="" srcset="">
+                        <h3 style="padding-top: 85px;">X Themed painting by YYY artist</h3>
+                        <p>Size of this painting is a inches*b inches.
+                            It is done using xxx paint based on the theme yyy.
+                            The canvas used is of eee material.
+                            The painting depicts -xxxxxxxxxxx-</p>
+                            <a href="cart.html" target="_blank"><button class="button">Add to cart</button></a>                    </div>
+
+                    <div class="item">
+                        <img src="https://i.ytimg.com/vi/imVN_D5T95c/maxresdefault.jpg" style="padding-left:1%"
+                            width="430px" alt="" srcset="">
+                        <h3 style="padding-top: 120px;">X Themed painting by YYY artist</h3>
+                        <p>Size of this painting is a inches*b inches.
+                            It is done using xxx paint based on the theme yyy.
+                            The canvas used is of eee material.
+                            The painting depicts -xxxxxxxxxxx-</p>
+                            <a href="cart.html" target="_blank"><button class="button">Add to cart</button></a>                    </div>
+
+
+                </div>
+                <div class="center">
+                    <a href="rajasthanishopping.html" target="_blank" style="text-decoration: none;">
+                      <button style="background-color: #007bff; color: #fff; padding: 10px 20px; border: none; border-radius: 4px;">
+                        View More
+                      </button>
+                    </a>
+            </div>
+            </div>
+        </div>
+        <div id="content" style="position: relative; top:-20px">
+            <div class="category" id="category5">
+                <h2>Kalamkari Paintings</h2>
+
+                <div class="item-container">
+                    <div class="item">
+                        <img src="https://img.artpal.com/472122/2-21-7-20-8-13-1m.jpg" width="250px"
+                            style="margin-left: 15%;" alt="" srcset="">
+                        <h3 style="padding-top: 21px;">X Themed painting by YYY artist</h3>
+                        <p>Size of this painting is a inches*b inches.
+                            It is done using xxx paint based on the theme yyy.
+                            The canvas used is of eee material.
+                            The painting depicts -xxxxxxxxxxx-</p>
+                            <a href="cart.html" target="_blank"><button class="button">Add to cart</button></a>                    </div>
+
+                    <div class="item">
+                        <img src="https://laasyaart.com/wp-content/uploads/2022/06/Untitled-design-8-e1654847259794.jpg"
+                            width="250px" height=" 300px" alt="" srcset="" style="margin-left: 20%;">
+                        <h3 style="padding-top: 27px;">X Themed painting by YYY artist</h3>
+                        <p>Size of this painting is a inches*b inches.
+                            It is done using xxx paint based on the theme yyy.
+                            The canvas used is of eee material.
+                            The painting depicts -xxxxxxxxxxx-</p>
+                            <a href="cart.html" target="_blank"><button class="button">Add to cart</button></a>                    </div>
+
+                    <div class="item">
+                        <img src="https://images.saatchiart.com/saatchi/2153681/art/10109135/9171907-DDVKJIHV-6.jpg"
+                            width="250px" alt="" srcset="" style="margin-left: 20%;">
+                        <h3 style="padding-top: 5px;">X Themed painting by YYY artist</h3>
+                        <p>Size of this painting is a inches*b inches.
+                            It is done using xxx paint based on the theme yyy.
+                            The canvas used is of eee material.
+                            The painting depicts -xxxxxxxxxxx-</p>
+                            <a href="cart.html" target="_blank"><button class="button">Add to cart</button></a>                    </div>
+
+
+                </div>
+                <div class="center">
+                    <a href="kalamkarishopping.html" target="_blank" style="text-decoration: none;">
+                      <button style="background-color: #007bff; color: #fff; padding: 10px 20px; border: none; border-radius: 4px;">
+                        View More
+                      </button>
+                    </a>
+            </div>
+            </div>
+        </div>
+
+        </div>
+        </div>
+
+    </main>
+
+
+    <footer>
+        <p>&copy; Contact us at ragaaikya@gmail.com</p>
+    </footer>
+
+</body>
+
+</html>

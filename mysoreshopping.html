@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page with Common Header</title>
+    <style>
+        /* CSS styles */
+        header {
+            background-color: #c4ae78;
+            height: 60px;
+            /* Customize the height of the header */
+            width: cover;
+            /* Customize the width of the header */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            
+        }
+
+         /* CSS styles for the cart button */
+    .cart-button {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    /* Responsive styles for the cart button */
+    @media (max-width: 600px) {
+      .cart-button {
+        padding: 8px 16px;
+      }
+    }
+
+
+
+
+        .logo img {
+            height: 80px;
+            /* Customize the height of the logo */
+        }
+
+        .title {
+            
+            font-size: 24px;
+            font-weight: bold;
+            margin-left: 10%;
+        }
+
+        .slogan {
+            font-size: 16px;
+            text-align: center;
+            color: black;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .section {
+            flex: 0 0 200px;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .section.right-section {
+            flex: 1;
+        }
+
+        body {
+            background-image: url('https://media.istockphoto.com/id/1163242150/photo/cotton-silk-fabric-wallpaper-texture-pattern-background-in-light-pastel-beige-cream-color-tone.jpg?s=612x612&w=0&k=20&c=Uu7j9-MFmwcbvalC0cwAA_gScdXMg_t_W23jGOTlFwg=');
+            background-repeat: no-repeat;
+            width: cover;
+            background-size: cover;
+            height: 200vh;
+            font-family: Arial, sans-serif;
+
+        }
+
+        #sidebar {
+            width: 200px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        #sidebar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #sidebar li {
+            margin-bottom: 10px;
+        }
+
+        #content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .topbar {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 20px;
+        }
+
+
+        .sort-button {
+            margin-left: 10px;
+            padding: 5px 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        #filterButton {
+            
+            margin-left: 10px;
+            padding: 5px 10px;
+            border: black;
+            border: none;
+            cursor: pointer;
+           
+        }
+
+        
+
+        #filterScreen {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 100%;
+            background-color: white;
+            transition: width 0.3s ease-in-out;
+            overflow-y: scroll;
+            z-index: 9998;
+        }
+
+        #filterContent {
+            padding: 20px;
+        }
+
+        #categoryList {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #categoryList li {
+            margin-bottom: 10px;
+        }
+        .subCategoryList {
+      list-style: none;
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    .subCategoryList li {
+      margin-bottom: 5px;
+    }
+
+        #filterScreen.open {
+            width: 300px;
+        }
+
+        #navigation a:hover {
+            text-decoration: none;
+            /* Remove underline on hover */
+        }
+
+        #content {
+            padding: 20px;
+        }
+
+        .category {
+            margin-bottom: 40px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .category h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .item-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* Adjust the number of columns as needed */
+            gap: 20px;
+        }
+
+        .item {
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .item h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .item p {
+            margin-bottom: 10px;
+        }
+
+        .item button {
+            padding: 5px 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <div class="logo">
+            <img src="log.jpg" alt="Logo">
+
+        </div>
+
+        <div class="title" >
+            Welcome to Raga Aikya
+            <div class="slogan">
+                Creativity under one roof
+            </div>
+        </div>
+        <a href="cart.html" class="cart-button">Cart</a>
+        <!-- Add your header content here -->
+    </header>
+
+    <div class="container">
+        <section class="section">
+            <div id="sidebar">
+                <ul>
+                    <h3> Other forms of Indian artwork</h3>
+                    <li><a href="madhubanishopping.html">Madhubani Paintings</a></li>
+                    <li><a href="warlishopping.html">Warli Paintings</a></li>
+                    <li><a href="rajasthanishopping.html">Rajasthani Paintings</a></li>
+                    <li><a href="kalamkarishopping.html">Kalamkari Paintings</a></li>
+                   <!-- Add more categories as needed -->
+                </ul>
+            </div>
+            <!-- Content for Section 1 -->
+        </section>
+
+        <section class="section right-section">
+            <div id="content">
+                <h2>Mysore Paintings</h2>
+
+                <div class="topbar">
+
+                    <button id="filterButton">Filter</button>
+  <div id="filterScreen">
+    <div id="filterContent">
+      <h3>Filters</h3>
+      <ul id="categoryList">
+        <li>
+          <label for="category1"><input type="checkbox" id="category1"> Type of paint</label>
+          <ul class="subCategoryList">
+            <li><label for="subCategory1"><input type="checkbox" id="subCategory1"> Acrylic Paint</label></li>
+            <li><label for="subCategory2"><input type="checkbox" id="subCategory2"> Oil Paint</label></li>
+            <!-- Add more subcategories as needed -->
+          </ul>
+        </li>
+        <li>
+          <label for="category2"><input type="checkbox" id="category2"> Canvas</label>
+          <ul class="subCategoryList">
+            <li><label for="subCategory3"><input type="checkbox" id="subCategory3"> linen</label></li>
+            <li><label for="subCategory4"><input type="checkbox" id="subCategory4"> cotton</label></li>
+            <!-- Add more subcategories as needed -->
+          </ul>
+        </li>
+        <!-- Add more categories as needed -->
+      </ul>
+    </div>
+  </div>
+
+                    <div class="dropdown-menu">
+                        <label for="sort">Sort by:</label>
+                        <select id="sort">
+                            <option value="price-low-to-high">Price: Low to High</option>
+                            <option value="price-high-to-low">Price: High to Low</option>
+                            <option value="size-small-to-big">Size: Small to Big</option>
+                            <option value="size-big-to-small">Size: Big to Small</option>
+                        </select>
+                    </div>
+                </div>
+
+
+
+                <div id="content">
+                    <div class="category" id="category1">
+
+
+                        <div class="item-container">
+                            <div class="item">
+                                <img height="350px" width="300px"
+                                    src="https://www.dsource.in/sites/default/files/styles/mini_responsivecustom_user_moblie_1x/public/resource/mysore-painting/tanjore-and-mysore-painting/minigallery/5861/tanjore-01.jpg?itok=lQlDoeC5&timestamp=1439890233"
+                                    alt="image 1">
+                                <h4>X Themed painting by YYY artist</h4>
+                                <p>Size of this painting is a inches*b inches.
+                                    It is done using xxx paint based on the theme yyy.
+                                    The canvas used is of eee material.
+                                    The painting depicts -xxxxxxxxxxx-</p>
+                                    <a href="cart.html" target="_blank"><button class="button">Add to cart</button></a>
+                            </div>
+
+                            <div class="item">
+                                <img height="350px" width="300px"
+                                    src="https://imgmedia.lbb.in/media/2017/06/594168f144f85d589e231191_5941666e44f85d589e230f82_1497458929032.jpg"
+                                    alt="image 1">
+                                <h4>X Themed painting by YYY artist</h4>
+                                <p>Size of this painting is a inches*b inches.
+                                    It is done using xxx paint based on the theme yyy.
+                                    The canvas used is of eee material.
+                                    The painting depicts -xxxxxxxxxxx-</p>
+                                    <a href="cart.html" target="_blank"><button class="button">Add to cart</button></a>
+                            </div>
+
+                            <div class="item">
+                                <img height="350px" width="300px"
+                                    src="https://www.ananya-online.in/userdata/public/gfx/5d7043ba7da38e193383a34bf6de89f5.jpg" alt="image 1">
+                                <h4>X Themed painting by YYY artist</h4>
+                                <p>Size of this painting is a inches*b inches.
+                                    It is done using xxx paint based on the theme yyy.
+                                    The canvas used is of eee material.
+                                    The painting depicts -xxxxxxxxxxx-</p>
+                                    <a href="cart.html" target="_blank"><button class="button">Add to cart</button></a>
+                            </div>
+
+                            <div class="item">
+                                <img height="350px" width="300px"
+                                    src="https://imgmedia.lbb.in/media/2017/06/5941691a44f85d589e23119c_5941666e44f85d589e230f82_1497458970265.jpg"
+                                    alt="image 1">
+                                <h4>X Themed painting by YYY artist</h4>
+                                <p>Size of this painting is a inches*b inches.
+                                    It is done using xxx paint based on the theme yyy.
+                                    The canvas used is of eee material.
+                                    The painting depicts -xxxxxxxxxxx-</p>
+                                    <a href="cart.html" target="_blank"><button class="button">Add to cart</button></a>
+                            </div>
+
+                            <div class="item">
+                                <img height="350px" width="300px"
+                                    src="https://im.hunt.in/cg/Mysore/City-Guide/PAINTING_G3J2OQ_634651f.jpg"
+                                    alt="image 1">
+                                <h4>X Themed painting by YYY artist</h4>
+                                <p>Size of this painting is a inches*b inches.
+                                    It is done using xxx paint based on the theme yyy.
+                                    The canvas used is of eee material.
+                                    The painting depicts -xxxxxxxxxxx-</p>
+                                    <a href="cart.html" target="_blank"><button class="button">Add to cart</button></a>
+                            </div>
+
+                            <div class="item">
+                                <img height="350px" width="300px"
+                                    src="https://j3k5s6s3.rocketcdn.me/wp-content/uploads/2021/03/Mysore-Painting-Gopinath-Sanday-10.jpg"
+                                    alt="image 1">
+                                <h4>X Themed painting by YYY artist</h4>
+                                <p>Size of this painting is a inches*b inches.
+                                    It is done using xxx paint based on the theme yyy.
+                                    The canvas used is of eee material.
+                                    The painting depicts -xxxxxxxxxxx-</p>
+                                    <a href="cart.html" target="_blank"><button class="button">Add to cart</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </div>
+
+    <script>
+        const sortButton = document.getElementById('sort-button');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+
+        sortButton.addEventListener('click', function () {
+            dropdownMenu.style.display = dropdownMenu.style.display === 'none' ? 'block' : 'none';
+        });
+
+        function toggleFilterDropdown() {
+            var filterDropdown = document.getElementById('filter-dropdown');
+            filterDropdown.style.display = filterDropdown.style.display === 'block' ? 'none' : 'block';
+        }
+
+        function applyFilter(category) {
+            var filterButton = document.getElementById('filter-button');
+            filterButton.textContent = category;
+            toggleFilterDropdown();
+
+            // Perform filtering logic based on the selected category
+            // You can implement your own filtering functionality here
+
+            // Example filtering logic based on category
+            if (category === 'Price') {
+                // Perform filtering based on price
+            } else if (category === 'Size') {
+                // Perform filtering based on size
+            } else if (category === 'Item Used') {
+                // Perform filtering based on item used
+            } else if (category === 'Type of Artwork') {
+                // Perform filtering based on type of artwork
+            }
+        }
+
+        const filterbutton = document.getElementById('filterButton');
+        const filterscreen = document.getElementById('filterScreen');
+
+        filterButton.addEventListener('click', toggleFilterScreen);
+
+        function toggleFilterScreen() {
+            filterScreen.classList.toggle('open');
+        }
+    </script>
+    <script>
+        const filterButton = document.getElementById('filterButton');
+    const filterScreen = document.getElementById('filterScreen');
+
+    filterButton.addEventListener('click', toggleFilterScreen);
+
+    function toggleFilterScreen() {
+      filterScreen.classList.toggle('open');
+    }
+
+    document.addEventListener('click', function(event) {
+      const target = event.target;
+      if (!filterScreen.contains(target) && target !== filterButton) {
+        filterScreen.classList.remove('open');
+      }
+    });
+    </script>
+
+</body>
+
+</html>
